@@ -50,6 +50,10 @@ const movies = [
         accessor: 'FallFies',
     },
     {
+        title: 'Home Sweet Home Alone (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
+        accessor: 'Home.Sweet.Home.Alone.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    },
+    {
         title: 'Fantastic Beasts And Where To Find Them (2016)',
         accessor: 'Fantastic.Beasts.And.Where.To.Find.Them.2016.1080p.BluRay.x264-[YTS.AG]',
     },
@@ -57,7 +61,10 @@ const movies = [
         title: 'Jumanji The Next Level (2019) [1080p] [BluRay] [5.1] [YTS.MX]',
         accessor: 'Jumanji.The.Next.Level.2019.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
     },
-
+    {
+        title: 'Jungle Cruise (2021) [1080p] [BluRay] [5.1] [YTS.MX]',
+        accessor: 'Jungle.Cruise.2021.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+    },
     {
         title: 'Maleficent (2014) [1080p]',
         accessor: 'Maleficent.2014.1080p.BluRay.x264.YIFY',
