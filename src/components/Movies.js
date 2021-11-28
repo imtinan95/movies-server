@@ -94,6 +94,10 @@ const movies = [
         accessor: 'Raya.And.The.Last.Dragon.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
     },
     {
+        title: 'Real Steel (2011) [1080p]',
+        accessor: 'Real.Steel.2011.1080p.BluRay.x264.YIFY',
+    },
+    {
         title: 'Soul (2020) [1080p]',
         accessor: 'Soul.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
     },
