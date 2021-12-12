@@ -7,6 +7,7 @@ import './assets/navBar.css';
 const icon_home = '/index/icons/icon_home.png';
 const icon_movie = '/index/icons/icon_movie.png';
 const icon_seasons = '/index/icons/icon_seasons.png';
+const icon_bighero6 = '/index/icons/logo_bighero6.png';
 
 export function Seasons() {
     return (
@@ -38,31 +39,10 @@ export function Seasons() {
                     Library so far, will be adding more soon <br />
                     Enzoy :-)
                 </h2>
-                <h3 className="SeasonTitle">Big Hero 6 Series</h3>
                 <div className="Seasons">
-                    {/* <!-- S01E01 --> */}
-                    <div className="EpisodeBox">
-                        <a href="./index_data/Seasons/Big Hero 6/Season 1/Big.Hero.6.The.Series.S01E01E02.1080p.WEB-DL.mkv">
-                            <img
-                                src="./index_data/Seasons/Big Hero 6/Season 1/Big.Hero.6.The.Series.jpg"
-                                alt="S01E01 Poster"
-                                width="180"
-                            />
-                        </a>
-                        <p className="EpisodeTitle">E01. Baymax Returns</p>
-                    </div>
-
-                    {/* <!-- S01E02 --> */}
-                    <div className="EpisodeBox">
-                        <a href="./index_data/Seasons/Big Hero 6/Season 1/Big.Hero.6.The.Series.S01E03.1080p.WEB-DL.mkv">
-                            <img
-                                src="./index_data/Seasons/Big Hero 6/Season 1/Big.Hero.6.The.Series - Blue.jpg"
-                                alt="S01E01 Poster"
-                                width="180"
-                            />
-                        </a>
-                        <p className="EpisodeTitle">E02. Issue 188</p>
-                    </div>
+                    <Link to="/seasons/bighero6">
+                        <img src={icon_bighero6} width="200" alt="icon_bighero6" />
+                    </Link>
                 </div>
             </div>
         </div>
