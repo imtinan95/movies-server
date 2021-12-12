@@ -14,6 +14,10 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png';
 // data list
 const movies = [
     {
+        title: 'Pirates of the Caribbean - Curse of the Black Pearl (2003) [1080p]',
+        accessor: 'Pirates.of.the.Caribbean.Curse.of.the.Black.Pearl.2003.1080p.BrRip.x264.Deceit.YIFY',
+    },
+    {
         title: '1917 (2019) [2160p] [4K] [BluRay] [7.1] [YTS.MX]',
         accessor: '1917.2019.2160p.4K.BluRay.x265.10bit.AAC7.1-[YTS.MX]',
     },
@@ -48,6 +52,10 @@ const movies = [
     {
         title: 'FallGuys',
         accessor: 'FallFies',
+    },
+    {
+        title: 'Gemini Man (2019) [2160p]',
+        accessor: 'Gemini.Man.2019.1080p.Bluray.x264.Aac5.1-[Yts.Mx]',
     },
     {
         title: 'Home Sweet Home Alone (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
@@ -86,6 +94,11 @@ const movies = [
         accessor: 'Mr.Beans.Holiday.2007.1080p.BRrip.x264.GAZ',
     },
     {
+        title: 'No Time To Die (2021) [1080p]',
+        accessor: 'No.Time.To.Die.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    },
+
+    {
         title: 'Ratatouille (2007) [1080p]',
         accessor: 'Ratatouille.2007.1080p.BrRip.x264.YIFY',
     },
@@ -108,6 +121,10 @@ const movies = [
     {
         title: 'Taken (2008) [1080p]',
         accessor: 'Taken.2008.1080pBrRip.x264.YIFY',
+    },
+    {
+        title: 'Tangled (2010) [1080p]',
+        accessor: 'Tangled.2010.1080p.BluRay.x264.YIFY',
     },
     {
         title: 'The SpongeBob Movie Sponge On The Run (2020) [1080p]',
