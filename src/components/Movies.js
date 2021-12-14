@@ -14,10 +14,6 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png';
 // data list
 const movies = [
     {
-        title: 'Pirates of the Caribbean - Curse of the Black Pearl (2003) [1080p]',
-        accessor: 'Pirates.of.the.Caribbean.Curse.of.the.Black.Pearl.2003.1080p.BrRip.x264.Deceit.YIFY',
-    },
-    {
         title: '1917 (2019) [2160p] [4K] [BluRay] [7.1] [YTS.MX]',
         accessor: '1917.2019.2160p.4K.BluRay.x265.10bit.AAC7.1-[YTS.MX]',
     },
@@ -97,7 +93,26 @@ const movies = [
         title: 'No Time To Die (2021) [1080p]',
         accessor: 'No.Time.To.Die.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
     },
-
+    {
+        title: 'Pirates of the Caribbean - Curse of the Black Pearl (2003) [1080p]',
+        accessor: 'Pirates.of.the.Caribbean.Curse.of.the.Black.Pearl.2003.1080p.BrRip.x264.Deceit.YIFY',
+    },
+    {
+        title: 'Pirates of the Caribbean - Dead Man`s Chest (2006) [1080p]',
+        accessor: 'Pirates.of.the.Caribbean.Dead.Mans.Chest.2006.1080p.BrRip.x264.Deceit.YIFY',
+    },
+    {
+        title: 'Pirates of the Caribbean - At Worlds End (2007) [1080p]',
+        accessor: 'Pirates.of.the.Caribbean.At.Worlds.End.2007.1080p.BrRip.x264.Deceit.YIFY',
+    },
+    {
+        title: 'Pirates of the Caribbean - On Stranger Tides (2011) [1080p]',
+        accessor: 'Pirates.of.the.Caribbean.On.Stranger.Tides.2011.1080p.BrRip.x264.Deceit.YIFY',
+    },
+    {
+        title: 'Pirates Of The Caribbean Dead Men Tell No Tales (2017) [1080p]',
+        accessor: 'Pirates.Of.The.Caribbean.Dead.Men.Tell.No.Tales.2017.1080p.BluRay.x264-[YTS.AG]',
+    },
     {
         title: 'Ratatouille (2007) [1080p]',
         accessor: 'Ratatouille.2007.1080p.BrRip.x264.YIFY',
