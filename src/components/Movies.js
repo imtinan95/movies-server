@@ -14,6 +14,18 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png';
 // data list
 const movies = [
     {
+        title: 'Atrangi Re (2021)',
+        accessor: 'Atrangi.Re.2021.1080P',
+    },
+    {
+        title: 'Sanju (2018) [BluRay] [1080p]',
+        accessor: 'Sanju.2018.1080p.BluRay.x264-[YTS.AM]',
+    },
+    {
+        title: 'Sonic The Hedgehog (2020) [1080p]',
+        accessor: 'Sonic.The.Hedgehog.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+    },
+    {
         title: '1917 (2019) [2160p] [4K] [BluRay] [7.1] [YTS.MX]',
         accessor: '1917.2019.2160p.4K.BluRay.x265.10bit.AAC7.1-[YTS.MX]',
     },

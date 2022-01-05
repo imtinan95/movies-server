@@ -182,7 +182,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Iron Man Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {ironman
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -196,7 +196,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Thor Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {thor
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -210,7 +210,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Captain America Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {CaptainAmerica.filter(function (movie) {
                         return movie.title.toLowerCase().includes(inputValue.toLowerCase());
                     }).map(function (movie) {
@@ -222,7 +222,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Guardians of The Galaxy Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {gotg
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -236,7 +236,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Ant-Man Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {antman
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -250,7 +250,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Doctor Strange Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {docstrange
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -264,7 +264,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Black Panther Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {blackpanther
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -278,7 +278,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Spider-Man Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {spiderman
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -292,7 +292,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Captain Marvel Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {captainmarvel
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
@@ -306,7 +306,7 @@ export function Marvel() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Avengers Series</h2>
                 <br />
-                <div className="Movies">
+                <div className="MarvelMovies">
                     {avengers
                         .filter(function (movie) {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());

@@ -77,7 +77,7 @@ export function HarryPotter() {
             <div className="Container-Content">
                 <h2 className="StyleTextAlignCenter">Season 1</h2>
                 <br />
-                <div className="Season">
+                <div className="BigHero6">
                     {bighero6
                         .filter(function (seasons) {
                             return seasons.title.toLowerCase().includes(inputValue.toLowerCase());

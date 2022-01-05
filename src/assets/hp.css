@@ -12,10 +12,10 @@ html {
   text-align: center;
 }
 .Movies {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
   justify-content: center;
 }
 .HarryPotterMovieTitle {
