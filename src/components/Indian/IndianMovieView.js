@@ -2,17 +2,17 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import { useParams } from 'react-router';
 
-function MovieView(props) {
+function IndianMovieView(props) {
     const params = useParams();
     return (
         <div className="VideoContainer">
-            <video controls preload="none">
-                <source src={`/Movies/${params.title}/${params.accessor}.mp4`} type="video/mp4" />
+            <video controls>
+                <source src={`/Movies/Hindi/${params.title}/${params.accessor}.mp4`} type="video/mp4" />
                 <track
                     label="English"
                     kind="subtitles"
                     srcLang="en"
-                    src={`/Movies/${params.title}/${params.accessor}.vtt`}
+                    src={`/Movies/Hindi/${params.title}/${params.accessor}.vtt`}
                     default
                 />
             </video>
@@ -20,4 +20,4 @@ function MovieView(props) {
     );
 }
 
-export default MovieView;
+export default IndianMovieView;

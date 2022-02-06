@@ -37,6 +37,11 @@
   align-items: center;
   margin: 1;
 }
+.indian{
+  text-decoration: none;
+  color: wheat;
+  font-size:x-large;
+}
 .PageFooter {
   text-align: center;
 }

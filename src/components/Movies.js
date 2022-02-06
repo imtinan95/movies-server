@@ -14,16 +14,16 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png';
 // data list
 const movies = [
     {
-        title: 'Atrangi Re (2021)',
-        accessor: 'Atrangi.Re.2021.1080P',
+        title: 'The Chronicles of Narnia - The Lion, The Witch, and The Wardrobe (2005) [1080p]',
+        accessor: 'The.Chronicles.of.Narnia.The.Lion.The Witch.And.The.Wardrobe.2005.1080p.Brrip.x264.Deceit.YIFY',
     },
     {
-        title: 'Sanju (2018) [BluRay] [1080p]',
-        accessor: 'Sanju.2018.1080p.BluRay.x264-[YTS.AM]',
+        title: 'The Chronicles of Narnia -  Prince Caspian (2008) [1080p]',
+        accessor: 'The.Chronicles.of.Narnia.Prince.Caspian.2008.1080p.Brrip.x264.Deceit.YIFY',
     },
     {
-        title: 'Sonic The Hedgehog (2020) [1080p]',
-        accessor: 'Sonic.The.Hedgehog.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+        title: 'Eternals (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
+        accessor: 'Eternals.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
     },
     {
         title: '1917 (2019) [2160p] [4K] [BluRay] [7.1] [YTS.MX]',
@@ -54,6 +54,10 @@ const movies = [
         accessor: 'Dracula.Untold.2014.1080p.BluRay.x264.YIFY',
     },
     {
+        title: 'Encanto (2021) [1080p]',
+        accessor: 'Encanto.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    },
+    {
         title: 'F9 (2021) [1080p]',
         accessor: 'F9.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
     },
@@ -68,6 +72,18 @@ const movies = [
     {
         title: 'Home Sweet Home Alone (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
         accessor: 'Home.Sweet.Home.Alone.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    },
+    {
+        title: 'Hotel Transylvania (2012) [1080p]',
+        accessor: 'Hotel.Transylvania.2012.1080p.BluRay.x264.YIFY',
+    },
+    {
+        title: 'Hotel Transylvania 2 (2015) [1080p]',
+        accessor: 'Hotel.Transylvania.2.2015.1080p.BluRay.x264.[YTS.AG]',
+    },
+    {
+        title: 'Hotel Transylvania Transformania (2022) [1080p] [WEBRip] [5.1] [YTS.MX]',
+        accessor: 'Hotel.Transylvania.Transformania.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
     },
     {
         title: 'Fantastic Beasts And Where To Find Them (2016)',
@@ -138,6 +154,10 @@ const movies = [
         accessor: 'Real.Steel.2011.1080p.BluRay.x264.YIFY',
     },
     {
+        title: 'Sonic The Hedgehog (2020) [1080p]',
+        accessor: 'Sonic.The.Hedgehog.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+    },
+    {
         title: 'Soul (2020) [1080p]',
         accessor: 'Soul.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
     },
@@ -152,6 +172,10 @@ const movies = [
     {
         title: 'Tangled (2010) [1080p]',
         accessor: 'Tangled.2010.1080p.BluRay.x264.YIFY',
+    },
+    {
+        title: 'The Day After Tomarrow (2004) [1080p]',
+        accessor: 'The.Day.After.Tomarrow.2004.1080p.BrRip.x264.YIFY',
     },
     {
         title: 'The SpongeBob Movie Sponge On The Run (2020) [1080p]',
@@ -233,6 +257,11 @@ export function Movies() {
                 <div>
                     <Link to="/movies/harrypotter">
                         <img src={icon_harryPotter} width="200" alt="icon_harryPotter" />
+                    </Link>
+                </div>
+                <div>
+                    <Link to="/movies/indian" className="indian">
+                        Indian Movies
                     </Link>
                 </div>
 

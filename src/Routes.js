@@ -6,19 +6,21 @@ import MarvelMovieView from './components/MarvelMovieView.js';
 import Matroska from './components/matroska.js';
 import HarryPotterMovieView from './components/_HarryPotter/HarryPotterMovieView.js';
 import Bighero6SeasonView from './components/Seasons/bighero6/Bighero6SeasonView.js';
+import IndianMovieView from './components/Indian/IndianMovieView';
 
 const Home = React.lazy(() => import('./App'));
 const Movies = React.lazy(() => import('./components/Movies'));
 const HarryPotter = React.lazy(() => import('./components/_HarryPotter/HarryPotter'));
 const BigHero6 = React.lazy(() => import('./components/Seasons/bighero6/Bighero6'));
-
+const Marvel = React.lazy(() => import('./components/Marvel'));
+const Indian = React.lazy(() => import('./components/Indian/Indian'));
 const Seasons = React.lazy(
     () =>
         new Promise((resolve) => {
             setTimeout(() => resolve(import('./Seasons')), 100);
         })
 );
-const Marvel = React.lazy(() => import('./components/Marvel'));
+
 function Routes() {
     return (
         <BrowserRouter>
@@ -48,13 +50,18 @@ function Routes() {
                     <Route exact path="/movies/harrypotter/watch/:title/:accessor">
                         <HarryPotterMovieView />
                     </Route>
+                    <Route exact path="/movies/indian">
+                        <Indian />
+                    </Route>
+                    <Route exact path="/movies/indian/watch/:title/:accessor">
+                        <IndianMovieView />
+                    </Route>
                     <Route exact path="/seasons/bighero6">
                         <BigHero6 />
                     </Route>
                     <Route exact path="/seasons/bighero6/watch/:title/:accessor">
                         <Bighero6SeasonView />
                     </Route>
-
                     <Route exact path="/mkv">
                         <Matroska />
                     </Route>
