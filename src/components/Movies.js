@@ -14,184 +14,109 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png';
 // data list
 const movies = [
     {
-        title: 'The Chronicles of Narnia - The Lion, The Witch, and The Wardrobe (2005) [1080p]',
-        accessor: 'The.Chronicles.of.Narnia.The.Lion.The Witch.And.The.Wardrobe.2005.1080p.Brrip.x264.Deceit.YIFY',
+        title: 'Turning Red (2022) [1080p]',
+        accessor: 'Turning.Red.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FTurning.Red.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=02bce9d5-05d5-4ae9-8936-b725809b0815',
     },
     {
-        title: 'The Chronicles of Narnia -  Prince Caspian (2008) [1080p]',
-        accessor: 'The.Chronicles.of.Narnia.Prince.Caspian.2008.1080p.Brrip.x264.Deceit.YIFY',
-    },
-    {
-        title: 'Eternals (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
-        accessor: 'Eternals.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: '1917 (2019) [2160p] [4K] [BluRay] [7.1] [YTS.MX]',
-        accessor: '1917.2019.2160p.4K.BluRay.x265.10bit.AAC7.1-[YTS.MX]',
+        title: 'Alpha (2018) [BluRay] [1080p]',
+        accessor: 'Alpha.2018.1080p.BluRay.x264-[YTS.AM]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FAlpha.2018.1080p.BluRay.x264-%5BYTS.AM%5D.jpg?alt=media&token=b45ab4b5-8a8d-4801-816d-a232f8852392',
     },
     {
         title: 'Big Hero 6 (2014) [1080p]',
         accessor: 'Big.Hero.6.2014.1080p.BluRay.x264.YIFY',
-    },
-    {
-        title: 'Cars (2006) [1080p]',
-        accessor: 'Cars.2006.1080p.BluRay.x264-[YTS.AG]',
-    },
-    {
-        title: 'Cars 2 (2011) [1080p]',
-        accessor: 'Cars.2.2011.1080p.BluRay.x264-[YTS.AG]',
-    },
-    {
-        title: 'Cars 3 (2017) [1080p]',
-        accessor: 'Cars.3.2017.1080p.BluRay.x264-[YTS.AG]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FBig.Hero.6.2014.1080p.BluRay.x264.YIFY.jpg?alt=media&token=0edade83-576e-41cb-a9a8-6553ca577e43',
     },
     {
         title: 'Central Intelligence (2016) [1080p]',
         accessor: 'Central.Intelligence.2016.1080p.BluRay.x264-[YTS.AG]',
-    },
-    {
-        title: 'Dracula Untold (2014) [1080p]',
-        accessor: 'Dracula.Untold.2014.1080p.BluRay.x264.YIFY',
-    },
-    {
-        title: 'Encanto (2021) [1080p]',
-        accessor: 'Encanto.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'F9 (2021) [1080p]',
-        accessor: 'F9.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FCentral.Intelligence.2016.1080p.BluRay.x264-%5BYTS.AG%5D.jpg?alt=media&token=a39b673f-ed9f-46f4-8599-dd51ea2e370e',
     },
     {
         title: 'FallGuys',
         accessor: 'FallFies',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FFallFies.jpg?alt=media&token=b532ed60-c84d-4b6d-8b97-9bec69239d67',
     },
     {
         title: 'Gemini Man (2019) [2160p]',
         accessor: 'Gemini.Man.2019.1080p.Bluray.x264.Aac5.1-[Yts.Mx]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FGemini.Man.2019.1080p.Bluray.x264.Aac5.1-%5BYts.Mx%5D.jpg?alt=media&token=05b114d1-94d3-49d3-99e5-04772d6dbc9a',
     },
     {
         title: 'Home Sweet Home Alone (2021) [1080p] [WEBRip] [5.1] [YTS.MX]',
         accessor: 'Home.Sweet.Home.Alone.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FHome.Sweet.Home.Alone.2021.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=977cdc9d-ba8f-4ac7-9d55-27ac53fd642b',
     },
     {
-        title: 'Hotel Transylvania (2012) [1080p]',
-        accessor: 'Hotel.Transylvania.2012.1080p.BluRay.x264.YIFY',
-    },
-    {
-        title: 'Hotel Transylvania 2 (2015) [1080p]',
-        accessor: 'Hotel.Transylvania.2.2015.1080p.BluRay.x264.[YTS.AG]',
-    },
-    {
-        title: 'Hotel Transylvania Transformania (2022) [1080p] [WEBRip] [5.1] [YTS.MX]',
-        accessor: 'Hotel.Transylvania.Transformania.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Fantastic Beasts And Where To Find Them (2016)',
-        accessor: 'Fantastic.Beasts.And.Where.To.Find.Them.2016.1080p.BluRay.x264-[YTS.AG]',
-    },
-    {
-        title: 'Jumanji The Next Level (2019) [1080p] [BluRay] [5.1] [YTS.MX]',
-        accessor: 'Jumanji.The.Next.Level.2019.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Jungle Cruise (2021) [1080p] [BluRay] [5.1] [YTS.MX]',
-        accessor: 'Jungle.Cruise.2021.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+        title: 'Luca (2021) [1080p]',
+        accessor: 'Luca.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FLuca.2021.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=801fa4d8-9772-46b2-b382-2af0cfb817ee',
     },
     {
         title: 'Maleficent (2014) [1080p]',
         accessor: 'Maleficent.2014.1080p.BluRay.x264.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FMaleficent.2014.1080p.BluRay.x264.YIFY.jpg?alt=media&token=9d032eb5-0f31-4e48-ab8c-94b326c8af32',
     },
     {
         title: 'Maleficent Mistress Of Evil (2019) [1080p]',
         accessor: 'Maleficent.Mistress.Of.Evil.2019.1080p.BluRay.x264-[YTS.LT]',
-    },
-    {
-        title: 'Moana (2016) [1080p]',
-        accessor: 'Moana.2016.1080p.BluRay.x264-[YTS.AG]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FMaleficent.Mistress.Of.Evil.2019.1080p.BluRay.x264-%5BYTS.LT%5D.jpg?alt=media&token=5f56e90d-71a1-4db8-905f-7342309064b9',
     },
     {
         title: 'Mr Bean (1997) [1080p]',
         accessor: 'Mr.Bean.1997.1080p.BRrip.x264.GAZ.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FMr.Bean.1997.1080p.BRrip.x264.GAZ.YIFY.jpg?alt=media&token=28963b49-ef5e-45f1-b137-fed06c94712a',
     },
     {
         title: 'Mr Beans Holiday (2007) [1080p]',
         accessor: 'Mr.Beans.Holiday.2007.1080p.BRrip.x264.GAZ',
-    },
-    {
-        title: 'No Time To Die (2021) [1080p]',
-        accessor: 'No.Time.To.Die.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FMr.Beans.Holiday.2007.1080p.BRrip.x264.GAZ.jpg?alt=media&token=fada2ebc-38a7-40b2-afac-866ba729f89f',
     },
     {
         title: 'Pirates of the Caribbean - Curse of the Black Pearl (2003) [1080p]',
         accessor: 'Pirates.of.the.Caribbean.Curse.of.the.Black.Pearl.2003.1080p.BrRip.x264.Deceit.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FPirates.of.the.Caribbean.Curse.of.the.Black.Pearl.2003.1080p.BrRip.x264.Deceit.YIFY.jpg?alt=media&token=21c0583e-e3ca-47ef-899a-f11462888b42',
     },
     {
         title: 'Pirates of the Caribbean - Dead Man`s Chest (2006) [1080p]',
         accessor: 'Pirates.of.the.Caribbean.Dead.Mans.Chest.2006.1080p.BrRip.x264.Deceit.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FPirates.of.the.Caribbean.Dead.Mans.Chest.2006.1080p.BrRip.x264.Deceit.YIFY.jpg?alt=media&token=2f867148-1d8d-4fe0-bb19-df16260c4996',
     },
     {
         title: 'Pirates of the Caribbean - At Worlds End (2007) [1080p]',
         accessor: 'Pirates.of.the.Caribbean.At.Worlds.End.2007.1080p.BrRip.x264.Deceit.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FPirates.of.the.Caribbean.At.Worlds.End.2007.1080p.BrRip.x264.Deceit.YIFY.jpg?alt=media&token=c11bdde0-88cf-4afc-b236-41bcfb95e584',
     },
     {
         title: 'Pirates of the Caribbean - On Stranger Tides (2011) [1080p]',
         accessor: 'Pirates.of.the.Caribbean.On.Stranger.Tides.2011.1080p.BrRip.x264.Deceit.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FPirates.of.the.Caribbean.On.Stranger.Tides.2011.1080p.BrRip.x264.Deceit.YIFY.jpg?alt=media&token=d6c6e03d-df40-47a3-979c-35dc1e259699',
     },
     {
         title: 'Pirates Of The Caribbean Dead Men Tell No Tales (2017) [1080p]',
         accessor: 'Pirates.Of.The.Caribbean.Dead.Men.Tell.No.Tales.2017.1080p.BluRay.x264-[YTS.AG]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FPirates.Of.The.Caribbean.Dead.Men.Tell.No.Tales.2017.1080p.BluRay.x264-%5BYTS.AG%5D.jpg?alt=media&token=49fe32ab-72ec-4b47-a274-333f99e71b1e',
     },
     {
         title: 'Ratatouille (2007) [1080p]',
         accessor: 'Ratatouille.2007.1080p.BrRip.x264.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FRatatouille.2007.1080p.BrRip.x264.YIFY.jpg?alt=media&token=1cc9f6cd-cdf8-4eca-8dd9-f2dd40da483c',
     },
     {
-        title: 'Raya And The Last Dragon (2021) [1080p]',
-        accessor: 'Raya.And.The.Last.Dragon.2021.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Real Steel (2011) [1080p]',
-        accessor: 'Real.Steel.2011.1080p.BluRay.x264.YIFY',
-    },
-    {
-        title: 'Sonic The Hedgehog (2020) [1080p]',
-        accessor: 'Sonic.The.Hedgehog.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Soul (2020) [1080p]',
-        accessor: 'Soul.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Spies in Disguise',
-        accessor: 'Spies.In.Disguise.2019.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Taken (2008) [1080p]',
-        accessor: 'Taken.2008.1080pBrRip.x264.YIFY',
-    },
-    {
-        title: 'Tangled (2010) [1080p]',
-        accessor: 'Tangled.2010.1080p.BluRay.x264.YIFY',
-    },
-    {
-        title: 'The Day After Tomarrow (2004) [1080p]',
-        accessor: 'The.Day.After.Tomarrow.2004.1080p.BrRip.x264.YIFY',
-    },
-    {
-        title: 'The SpongeBob Movie Sponge On The Run (2020) [1080p]',
-        accessor: 'The.SpongeBob.Movie.Sponge.On.The.Run.2020.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    },
-    {
-        title: 'Tooth Fairy (2010) [1080p]',
-        accessor: 'Tooth.Fairy.2010.1080p.BrRip.x264.YIFY',
+        title: 'Unbroken (2014) [1080p]',
+        accessor: 'Unbroken.2014.1080p.BluRay.x264.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FUnbroken.2014.1080p.BluRay.x264.YIFY.jpg?alt=media&token=2c0f8b31-6f28-457a-abc0-560ee50fc211',
     },
     {
         title: 'Wall-E',
         accessor: 'WALL-E.2008.1080p.BrRip.x264.YIFY',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FWALL-E.2008.1080p.BrRip.x264.YIFY.jpg?alt=media&token=efa0ecbe-32e4-4b7f-b7d8-0cc5b7014343',
     },
     {
         title: 'We Bare Bears The Movie (2020) [1080p]',
         accessor: 'We.Bare.Bears.The.Movie.2020.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
+        poster: 'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FWe.Bare.Bears.The.Movie.2020.1080p.BluRay.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=2f0e7a11-5bdc-45c9-9986-468689bdf7e7',
     },
 ];
 
@@ -277,7 +202,7 @@ export function Movies() {
                             return movie.title.toLowerCase().includes(inputValue.toLowerCase());
                         })
                         .map(function (movie) {
-                            return <Movie title={movie.title} accessor={movie.accessor} />;
+                            return <Movie title={movie.title} accessor={movie.accessor} poster={movie.poster} />;
                         })}
                 </div>
             </div>

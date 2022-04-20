@@ -77,6 +77,10 @@ const docstrange = [
         title: 'Doctor Strange (2016) [1080p]',
         accessor: 'Doctor.Strange.2016.1080p.BluRay.x264-[YTS.AG]',
     },
+    {
+        title: 'Doctor Strange - Strange Supreme',
+        accessor: 'Doctor Strange - Strange Supreme',
+    },
 ];
 const blackpanther = [
     {
@@ -92,6 +96,10 @@ const spiderman = [
     {
         title: 'Spider-Man Far From Home (2019) [1080p]',
         accessor: 'Spider-Man.Far.From.Home.2019.1080p.BluRay.x264-[YTS.LT]',
+    },
+    {
+        title: 'Spider-Man No Way Home (2021) [1080p]',
+        accessor: 'Spider-Man.No.Way.Home.2021.1080p.BluRay.x264.AAC5.1-[YTS.MX]',
     },
     {
         title: 'Spider-Man Into The Spider-Verse (2018) [1080p]',
