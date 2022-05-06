@@ -34,6 +34,18 @@ const moon = [
     poster:
       'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/seasons%2Fmoonknight%2FText.png?alt=media&token=698bdeb2-e579-4c30-8a4a-6f8fdde7e70b',
   },
+  {
+    title: 'Episode 5',
+    accessor: 'Moon Knight S01E05',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/seasons%2Fmoonknight%2FText.png?alt=media&token=698bdeb2-e579-4c30-8a4a-6f8fdde7e70b',
+  },
+  {
+    title: 'Episode 6',
+    accessor: 'Moon Knight S01E06',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/seasons%2Fmoonknight%2FText.png?alt=media&token=698bdeb2-e579-4c30-8a4a-6f8fdde7e70b',
+  },
 ]
 
 export function MoonKnight() {

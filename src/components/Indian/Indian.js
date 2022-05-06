@@ -13,10 +13,6 @@ const icon_seasons = '/index/icons/icon_seasons.png';
 // data list
 const movies = [
     {
-        title: 'Atrangi Re (2021) 1080p',
-        accessor: 'Atrangi Re (2021) 1080p',
-    },
-    {
         title: 'Bhool Bhulaiyaa (2007) 1080p',
         accessor: 'Bhool Bhulaiyaa (2007) 1080p',
     },
@@ -27,10 +23,6 @@ const movies = [
     {
         title: 'Munna Bhai M.B.B.S. (2003) 720p',
         accessor: 'Munna Bhai M.B.B.S. (2003) 720p',
-    },
-    {
-        title: 'Sanju (2018) 1080p',
-        accessor: 'Sanju (2018) 1080p',
     },
 ];
 
