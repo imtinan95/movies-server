@@ -1,5 +1,7 @@
 /* eslint-disable camelcase */
 import { Link } from 'react-router-dom'
+import firebase from 'firebase'
+const db = firebase.firestore()
 
 //css
 import './../assets/App.css'
@@ -168,6 +170,38 @@ const movies = [
   },
 ]
 
+const Read = () => {
+  // Fetch the required data using the get() method
+  const Fetchdata = () => {
+    db.collection('Movies-list')
+      .get()
+      .then((querySnapshot) => {
+        // Loop through the data and store
+        // it in array to display
+        querySnapshot.forEach((element) => {
+          var data = element.data()
+          setInfo((arr) => [...arr, data])
+        })
+      })
+  }
+}
+
+// Define how each display entry will be structured
+const Frame = ({ Accessor, Name, Poster }) => {
+  console.log(Accessor + ' ' + Name + ' ' + Poster)
+  return (
+    <center>
+      <div className="div">
+        <p>NAME : {Name}</p>
+
+        <p>Poster : {Poster}</p>
+
+        <p>Accessor : {Accessor}</p>
+      </div>
+    </center>
+  )
+}
+
 export function Movies() {
   const [inputValue, setInputValue] = useState('')
 
@@ -221,7 +255,7 @@ export function Movies() {
       </div>
 
       <div className="Container-Content">
-        <h1>T'is page is for Watching Movies</h1>
+        <h1>T'is pPoster is for Watching Movies</h1>
         <div>
           <Link to="/movies/marvel">
             <img src={icon_marvel} width="200" alt="icon_marvel" />
@@ -243,7 +277,19 @@ export function Movies() {
           Enzoy :-)
         </h2>
         <br />
+        <div>
+          <center>
+            <h2>Student Details</h2>
+          </center>
 
+          {info.map((data) => (
+            <Frame
+              Accessor={data.Accessor}
+              name={data.Name}
+              Poster={data.Poster}
+            />
+          ))}
+        </div>
         <div className="Movies">
           {movies
             .filter(function (movie) {
