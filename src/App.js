@@ -40,6 +40,7 @@ function Home() {
         <h3>Tap on Movies' Icon to start watching</h3>
         <br />
         <br />
+        <h2>Firebase connected</h2>
       </div>
       <br />
       <br />
