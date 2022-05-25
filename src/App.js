@@ -45,6 +45,7 @@ function Home() {
         <a href="https://api.whatsapp.com/send?phone=923118667776">
           <img src={icon_whatsapp}></img>
         </a>
+        <h2>Firebase connected</h2>
       </div>
       <br />
       <br />
