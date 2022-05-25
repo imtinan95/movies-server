@@ -43,7 +43,7 @@ function Home() {
         <br />
         <h3>For Further requests or support contact me here</h3>
         <a href="https://api.whatsapp.com/send?phone=923118667776">
-          <img src={icon_whatsapp}></img>
+          <img src={icon_whatsapp} alt="whatsappIcon"></img>
         </a>
       </div>
       <br />
