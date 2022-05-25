@@ -10,6 +10,7 @@ import './assets/navBar.css'
 const icon_home = '/index/icons/icon_home.png'
 const icon_movie = '/index/icons/icon_movie.png'
 const icon_seasons = '/index/icons/icon_seasons.png'
+const icon_whatsapp = '/index/icons/whatsapp.svg'
 
 function Home() {
   return (
@@ -40,6 +41,10 @@ function Home() {
         <h3>Tap on Movies' Icon to start watching</h3>
         <br />
         <br />
+        <h3>For Further requests or support contact me here</h3>
+        <a href="https://api.whatsapp.com/send?phone=923118667776">
+          <img src={icon_whatsapp}></img>
+        </a>
       </div>
       <br />
       <br />

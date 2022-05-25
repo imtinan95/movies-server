@@ -18,28 +18,29 @@ const icon_harryPotter = '/index/icons/logo_harry-potter.png'
 // data list
 const movies = [
   {
-    title: 'Sonic The Hedgehog 2',
-    accessor: 'Sonic.The.Hedgehog.2.2022.1080p.x264.AAC-[YTS.MX]',
+    title: 'Charlie and the Chocolate Factory (2005) [1080p]',
+    accessor:
+      'Charlie.and.the.Chocolate.Factory.2005.1080p.BrRip.x264.BOKUTOX.YIFY',
     poster:
-      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FSonic.The.Hedgehog.2.2022.1080p.x264.AAC-%5BYTS.MX%5D.jpg?alt=media&token=2594d86a-90f8-4047-be68-9e73aa4c2dc8',
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FCharlie.and.the.Chocolate.Factory.2005.1080p.BrRip.x264.BOKUTOX.YIFY.jpg?alt=media&token=15d3af73-3abe-494c-a77e-e8244e7b0bff',
   },
   {
-    title: 'The Royal Treatment (2022) [1080p]',
-    accessor: 'The.Royal.Treatment.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    title: 'Morbius (2022) [1080p]',
+    accessor: 'Morbius.2022.1080p.WEBRip.x264.AAC-[YTS.MX]',
     poster:
-      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FThe.Royal.Treatment.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=cc2699cf-4235-4fe5-8f77-44e2fff34156',
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FMorbius.2022.1080p.WEBRip.x264.AAC-%5BYTS.MX%5D.jpg?alt=media&token=6f628c02-9dda-4254-93ed-49ea151d837b',
+  },
+  {
+    title: 'The Bad Guys (2022) [1080p]',
+    accessor: 'The.Bad.Guys.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FThe.Bad.Guys.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=2908a7f4-0e58-430a-b9fc-92cce8cda511',
   },
   {
     title: 'Alita Battle Angel (2019)',
     accessor: 'Alita.Battle.Angel.2019.1080p.BluRay.x264-[YTS.LT]',
     poster:
       'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FAlita.Battle.Angel.2019.1080p.BluRay.x264-%5BYTS.LT%5D.jpg?alt=media&token=8565eb7d-2891-44f5-b7e4-0ccfd5aed736',
-  },
-  {
-    title: 'Turning Red (2022) [1080p]',
-    accessor: 'Turning.Red.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
-    poster:
-      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FTurning.Red.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=02bce9d5-05d5-4ae9-8936-b725809b0815',
   },
   {
     title: 'Alpha (2018) [BluRay] [1080p]',
@@ -147,6 +148,24 @@ const movies = [
     accessor: 'Ratatouille.2007.1080p.BrRip.x264.YIFY',
     poster:
       'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FRatatouille.2007.1080p.BrRip.x264.YIFY.jpg?alt=media&token=1cc9f6cd-cdf8-4eca-8dd9-f2dd40da483c',
+  },
+  {
+    title: 'Sonic The Hedgehog 2',
+    accessor: 'Sonic.The.Hedgehog.2.2022.1080p.x264.AAC-[YTS.MX]',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FSonic.The.Hedgehog.2.2022.1080p.x264.AAC-%5BYTS.MX%5D.jpg?alt=media&token=2594d86a-90f8-4047-be68-9e73aa4c2dc8',
+  },
+  {
+    title: 'The Royal Treatment (2022) [1080p]',
+    accessor: 'The.Royal.Treatment.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FThe.Royal.Treatment.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=cc2699cf-4235-4fe5-8f77-44e2fff34156',
+  },
+  {
+    title: 'Turning Red (2022) [1080p]',
+    accessor: 'Turning.Red.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]',
+    poster:
+      'https://firebasestorage.googleapis.com/v0/b/movie-server-c0e30.appspot.com/o/moviesPosters%2FTurning.Red.2022.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.jpg?alt=media&token=02bce9d5-05d5-4ae9-8936-b725809b0815',
   },
   {
     title: 'Unbroken (2014) [1080p]',
