@@ -1,6 +1,10 @@
-import firebase from 'firebase'
+import { initializeApp } from 'firebase/app'
+import { getFirestore } from 'firebase/firestore'
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-var firebaseConfig = {
+// Your web app's Firebase configuration
+const firebaseConfig = {
   apiKey: 'AIzaSyBWznaXtOaZEx3cK5-K349LA50ZxSJR4tg',
   authDomain: 'movie-server-c0e30.firebaseapp.com',
   projectId: 'movie-server-c0e30',
@@ -10,7 +14,5 @@ var firebaseConfig = {
 }
 
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig)
-var db = firebase.firestore()
-
-export default db
+export const app = initializeApp(firebaseConfig)
+export const firestore = getFirestore(app)

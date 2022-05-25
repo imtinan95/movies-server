@@ -6,18 +6,22 @@ import './../assets/App.css'
 import './../assets/indexi.css'
 import '../assets/movies.css'
 import '../assets/navBar.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Movie from './Movie'
-import Read from './Read'
+// import Read from './Read'
+import {
+  addDoc,
+  collection,
+  doc,
+  getDocs,
+  orderBy,
+  query,
+  setDoc,
+  writeBatch,
+} from 'firebase/firestore'
+import { firestore } from './Firebase'
 
-// Files
-const icon_home = '/index/icons/icon_home.png'
-const icon_movie = '/index/icons/icon_movie.png'
-const icon_seasons = '/index/icons/icon_seasons.png'
-const icon_marvel = '/index/icons/logo_marvel.jpg'
-const icon_harryPotter = '/index/icons/logo_harry-potter.png'
-// data list
-const movies = [
+const data = [
   {
     title: 'Sonic The Hedgehog 2',
     accessor: 'Sonic.The.Hedgehog.2.2022.1080p.x264.AAC-[YTS.MX]',
@@ -169,8 +173,16 @@ const movies = [
   },
 ]
 
+// Files
+const icon_home = '/index/icons/icon_home.png'
+const icon_movie = '/index/icons/icon_movie.png'
+const icon_seasons = '/index/icons/icon_seasons.png'
+const icon_marvel = '/index/icons/logo_marvel.jpg'
+const icon_harryPotter = '/index/icons/logo_harry-potter.png'
+
 export function Movies() {
   const [inputValue, setInputValue] = useState('')
+  const [movies, setMovies] = useState([])
 
   function handleChange(event) {
     setInputValue(event.target.value)
@@ -179,6 +191,48 @@ export function Movies() {
     event.preventDefault()
     setInputValue('')
   }
+
+  async function addMovies() {
+    console.log('addMovies()')
+    for (const $movie of data) {
+      // const movieRef = addDoc(collection(firestore, 'movies'), $movie)
+      await setDoc(doc(firestore, 'movies', $movie.accessor), $movie)
+    }
+    console.log('addMovies()')
+  }
+
+  async function fetchMovies() {
+    const q = await query(
+      collection(firestore, 'movies'),
+      orderBy('title', 'asc')
+    )
+    const querySnapshot = await getDocs(q)
+    const $movies = []
+    querySnapshot.forEach(($doc) => {
+      $movies.push({ id: $doc.id, ...$doc.data() })
+    })
+    setMovies($movies)
+  }
+
+  async function addMovie({ accessor, poster, title }) {
+    await setDoc(doc(firestore, 'movies', accessor), {
+      accessor,
+      poster,
+      title,
+    })
+  }
+
+  useEffect(() => {
+    ;(async function () {
+      // await addMovies()
+      await fetchMovies()
+      // addMovie({
+      //   accessor: 'my_new_accessor',
+      //   poster: 'http://www.google.com/',
+      //   title: 'My New Movie',
+      // })
+    })()
+  }, [])
 
   return (
     <div className="moviesbody">
@@ -244,10 +298,8 @@ export function Movies() {
           Enzoy :-)
         </h2>
         <br />
-        <div>
-          <Read />
-        </div>
-        {/* <div className="Movies">
+        <div>{/* <Read /> */}</div>
+        <div className="Movies">
           {movies
             .filter(function (movie) {
               return movie.title
@@ -257,13 +309,14 @@ export function Movies() {
             .map(function (movie) {
               return (
                 <Movie
+                  key={movie.id}
                   title={movie.title}
                   accessor={movie.accessor}
                   poster={movie.poster}
                 />
               )
             })}
-        </div> */}
+        </div>
       </div>
     </div>
   )
