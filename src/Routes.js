@@ -7,6 +7,7 @@ import HarryPotterMovieView from './components/_HarryPotter/HarryPotterMovieView
 import IndianMovieView from './components/Indian/IndianMovieView'
 import Bighero6SeasonView from './components/Seasons/bighero6/Bighero6SeasonView.js'
 import MoonKnightSeasonView from './components/Seasons/MoonKnight/MoonKnightSeasonView.js'
+import MsMarvelSeasonView from './components/Seasons/msmarvel/MsMarvelSeasonView.js'
 import Matroska from './components/matroska.js'
 
 const Home = React.lazy(() => import('./App'))
@@ -27,6 +28,9 @@ const BigHero6 = React.lazy(() =>
 )
 const MoonKnight = React.lazy(() =>
   import('./components/Seasons/MoonKnight/MoonKnight')
+)
+const MsMarvel = React.lazy(() =>
+  import('./components/Seasons/msmarvel/MsMarvel')
 )
 
 function Routes() {
@@ -86,6 +90,12 @@ function Routes() {
           </Route>
           <Route exact path="/seasons/moonknight/watch/:title/:accessor">
             <MoonKnightSeasonView />
+          </Route>
+          <Route exact path="/seasons/msmarvel">
+            <MsMarvel />
+          </Route>
+          <Route exact path="/seasons/msmarvel/watch/:title/:accessor">
+            <MsMarvelSeasonView />
           </Route>
 
           <Route exact path="/mkv">
