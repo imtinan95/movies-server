@@ -5,7 +5,7 @@ function HarryPotterMovies(props) {
     return (
         <div className="MovieBox">
             <Link to={`/movies/HarryPotter/watch/${title}/${accessor}`}>
-                <img src={`../Movies/HarryPotter/${title}/${accessor}.jpg`} alt={`${title} Poster`} height="400" />
+                <img src={`/movies/HarryPotter/${title}/${accessor}.jpg`} alt={`${title} Poster`} height="400" />
             </Link>
             <p className="HarryPotterMovieTitle">{title}</p>
         </div>
@@ -13,3 +13,4 @@ function HarryPotterMovies(props) {
 }
 
 export default HarryPotterMovies;
+

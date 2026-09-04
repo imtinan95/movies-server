@@ -6,13 +6,13 @@ function HarryPotterMovieView(props) {
     const params = useParams();
     return (
         <div className="VideoContainer">
-            <video controls>
-                <source src={`/Movies/HarryPotter/${params.title}/${params.accessor}.mp4`} type="video/mp4" />
+            <video controls preload="metadata" style={{ maxWidth: '100%' }}>
+                <source src={`/movies/HarryPotter/${params.title}/${params.accessor}.mp4`} type="video/mp4" />
                 <track
                     label="English"
                     kind="subtitles"
                     srcLang="en"
-                    src={`/Movies/HarryPotter/${params.title}/${params.accessor}.vtt`}
+                    src={`/movies/HarryPotter/${params.title}/${params.accessor}.vtt`}
                     default
                 />
             </video>
@@ -21,3 +21,4 @@ function HarryPotterMovieView(props) {
 }
 
 export default HarryPotterMovieView;
+
