@@ -198,6 +198,51 @@ const icon_movie = '/index/icons/icon_movie.png'
 const icon_seasons = '/index/icons/icon_seasons.png'
 const icon_marvel = '/index/icons/logo_marvel.jpg'
 const icon_harryPotter = '/index/icons/logo_harry-potter.png'
+// data list
+const movies = [
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+  {
+    title: 'Harold Kumar Go To Amsterdam (2008) [BLURAY] [1080p] [BluRay] [5.1] [YTS.BZ]',
+    accessor: 'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ]',
+    poster:
+      'Harold.Kumar.Go.To.Amsterdam.2008.BLURAY.1080p.BluRay.x264.AAC5.1-[YTS.BZ].jpg',
+  },
+]
 
 export function Movies() {
   const [inputValue, setInputValue] = useState('')
@@ -328,7 +373,7 @@ export function Movies() {
             .map(function (movie) {
               return (
                 <Movie
-                  key={movie.id}
+                  key={movie.accessor || movie.title}
                   title={movie.title}
                   accessor={movie.accessor}
                   poster={movie.poster}
